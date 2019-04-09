@@ -20,12 +20,7 @@ void setup() {
   pinMode(ledPin, OUTPUT); // declare the ledPin as as OUTPUT
   Serial.begin(9600);       // use the serial port
 
-  Serial.print("Initializing SD card...");
-  if (!SD.begin(4)) {
-    Serial.println(" failed!");
-    while(true);
-  }
-  Serial.println(" done.");
+  
 }
 
 void loop() {
